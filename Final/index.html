@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="image/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Carmen Jessalyn | UI/UX, Front-End & Data</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+    <canvas id="starfield"></canvas>
+    <div class="planet-field">
+        <div class="planet planet-a">
+            <div class="ring"></div>
+        </div>
+        <div class="planet planet-b"></div>
+        <div class="planet planet-c"></div>
+    </div>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="index.html" class="nav-logo"><span></span>CARMEN</a>
+        <ul class="nav-links">
+            <li><a href="#about">Overview</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#resume">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bagian Hero -->
+    <section id="hero">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <p class="hero-label">Carmen Jessalyn Tjong Malik</p>
+
+                <h1 class="hero-headline"
+                    style="text-transform: uppercase; font-weight: 800; font-size: clamp(3.5rem, 8vw, 6rem); line-height: 1.1;">
+                    UI/UX <span class="accent-cyan">&</span><br>
+                    FRONT-END DEV
+                    <span class="accent-cyan">With a </span>Data <br> Background
+                </h1>
+
+                <div class="hero-actions">
+                    <a href="#work" class="btn-primary">
+                        CLick here to see projects
+                        <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+                            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#resume" class="btn-ghost">Download CV</a>
+                </div>
+            </div>
+
+            <!-- Visual Hero -->
+            <div class="hero-visual">
+                <div class="orbit-system">
+                    <div class="orbit-ring">
+                        <div class="orbit-dot"></div>
+                    </div>
+                    <div class="orbit-ring">
+                        <div class="orbit-dot"></div>
+                    </div>
+                    <div class="orbit-ring">
+                        <div class="orbit-dot"></div>
+                    </div>
+                    <div class="orbit-center">
+                        <div class="orbit-center-icon">✦</div>
+                        <div class="orbit-center-text">Product</div>
+                    </div>
+                    <div class="skill-float f1">UI/UX Design</div>
+                    <div class="skill-float f2">Front-End Dev</div>
+                    <div class="skill-float f3">Data Analytics</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Bagian About / Overview -->
+    <section id="about">
+        <div class="section-divider"></div>
+        <div class="about-inner reveal">
+            <div class="about-photo">
+                <div class="photo-frame">
+                    <div class="photo-placeholder">
+                        <img src="image/almet.png" alt="Carmen Jessalyn" class="photo-img" />
+                    </div>
+                </div>
+                <div class="photo-caption">Jakarta, Indonesia</div>
+            </div>
+
+            <div class="about-right">
+                <p class="section-tag">About Carmen</p>
+                <h2 class="section-title"
+                    style="text-transform: uppercase; font-weight: 800; font-size: clamp(2.5rem, 5vw, 4rem);">
+                    hello!
+                </h2>
+
+                <p class="about-text">
+                    I’m an <strong>Information Systems student at Universitas Tarumanagara (UNTAR)</strong> who enjoys
+                    exploring the creative side of technology through three core lenses: <strong>UI/UX Design, Front-End
+                        Development, and Data Analytics</strong>.</p>
+
+                <p class="about-text">
+                    I love being part of the full process—from designing clean interfaces in Figma and coding them into
+                    responsive websites, to analyzing data to make better product decisions. I’m always eager to learn,
+                    build, and solve real problems through tech.
+                </p>
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3.9+</div>
+                        <div class="stat-label">Current GPA</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Core Skillsets</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Dedication to Learning</div>
+                    </div>
+                </div>
+
+                <div class="tools-grid-label">Tech Stack & Tools</div>
+                <div class="tools-grid">
+                    <span class="tool-tag">Figma</span>
+                    <span class="tool-tag">HTML5 / CSS3 / JS</span>
+                    <span class="tool-tag">Python</span>
+                    <span class="tool-tag">Draw.IO</span>
+                    <span class="tool-tag">Power BI</span>
+                    <span class="tool-tag">Responsive Layouts</span>
+                    <span class="tool-tag">Git & GitHub</span>
+                    <span class="tool-tag">Canva</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Featured Work -->
+    <section id="work">
+        <div class="section-divider"></div>
+
+        <!-- Header Showcase -->
+        <div class="showcase-top-bar reveal">
+            <div>
+                <p class="section-tag">Featured Work</p>
+                <h2 class="section-title" style="margin-bottom: 0;">Projects</h2>
+            </div>
+
+            <div class="showcase-nav-controls">
+                <button class="btn-nebula-nav" id="showcasePrev" aria-label="Proyek Sebelumnya">
+                    <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                        <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="btn-nebula-nav" id="showcaseNext" aria-label="Proyek Selanjutnya">
+                    <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                        <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Showcase Utama -->
+        <div class="nebula-showcase-box reveal">
+            <div class="showcase-slider-track">
+
+                <!-- PROYEK 1: UI/UX DESIGN (Moodal) -->
+                <div class="project-slide-item is-active" data-slide="0">
+                    <div class="project-visual-panel theme-moodal">
+                        <div class="space-grid-bg"></div>
+                        <span class="project-badge-top">UI/UX & Product Design</span>
+                        <div class="project-big-mark">
+                            <img src="image/MOODAL.jpg" alt="UI/UX Case Study" />
+                        </div>
+                    </div>
+                    <div class="project-info-panel">
+                        <div class="info-sublabel">User Research & Wireframing</div>
+                        <h3 class="info-title">Moodal</h3>
+                        <p class="info-desc">
+                            An AI-powered financial copilot designed to simplify cash flow management and bookkeeping
+                            for freelancers, creative workers, and young entrepreneurs. Focused on user research,
+                            feature mapping, and building an intuitive Figma prototype with dark mode and automated SAK
+                            EMKM reports to help small businesses become bankable.
+                        </p>
+                        <div class="info-tech-stack">
+                            <span class="tech-pill">Figma</span>
+                            <span class="tech-pill">Maze</span>
+                            <span class="tech-pill">Wireframing</span>
+                            <span class="tech-pill">User Flow</span>
+                            <span class="tech-pill">Prototyping</span>
+                            <span class="tech-pill">User Testing</span>
+                        </div>
+
+                        <div class="info-footer">
+                            <div class="project-counter">Projects <span>01</span> / 03</div>
+                            <a href="UI/case-study-moodal.html" class="btn-github-link">
+                                <span>Lihat Case Study</span>
+                                <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+                                    <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYEK 2: UI/UX DESIGN (Kayu Kita) -->
+                <div class="project-slide-item" data-slide="1">
+                    <div class="project-visual-panel theme-kayu">
+                        <div class="space-grid-bg"></div>
+                        <span class="project-badge-top">UI/UX & Product Design</span>
+                        <div class="project-big-mark">
+                            <img src="image/KAYUKITA.jpg" alt="UI/UX Case Study" />
+                        </div>
+                    </div>
+                    <div class="project-info-panel">
+                        <div class="info-sublabel">User Research & Wireframing</div>
+                        <h3 class="info-title">Kayu Kita</h3>
+                        <p class="info-desc">
+                            A digital marketplace connecting local woodcraft artisans with buyers to preserve
+                            Indonesia's craft heritage. Focused on user research, multi-persona mapping, and prototyping
+                            key features (Cari Kayu, Buat Kayu, and Tau Kayu) in Figma to build trust and simplify
+                            custom furniture ordering.
+                        </p>
+                        <div class="info-tech-stack">
+                            <span class="tech-pill">Figma</span>
+                            <span class="tech-pill">Wireframing</span>
+                            <span class="tech-pill">User Flow</span>
+                            <span class="tech-pill">Prototyping</span>
+                            <span class="tech-pill">User Testing</span>
+                        </div>
+
+                        <div class="info-footer">
+                            <div class="project-counter">Projects <span>02</span> / 03</div>
+                            <a href="UI/case-study-kayukita.html" class="btn-github-link">
+                                <span>Lihat Case Study</span>
+                                <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+                                    <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYEK 3: FRONT-END (Peonies Studio) -->
+                <div class="project-slide-item" data-slide="2">
+                    <div class="project-visual-panel theme-academic">
+                        <div class="space-grid-bg"></div>
+                        <span class="project-badge-top">Front-End Architecture</span>
+                        <div class="project-big-mark">
+                            <img src="image/Peonies.jpeg" alt="Peonies Studio Front-End" />
+                        </div>
+                    </div>
+                    <div class="project-info-panel">
+                        <div class="info-sublabel">Web Development</div>
+                        <h3 class="info-title">Peonies Studio Web</h3>
+                        <p class="info-desc">
+                            A front-end implementation of the Peonies Studio landing page built using pure HTML5 and
+                            CSS3. Focused on turning visual layouts into clean, well-structured code with full
+                            responsiveness across desktop and mobile screens.
+                        </p>
+
+                        <div class="info-tech-stack">
+                            <span class="tech-pill">HTML5</span>
+                            <span class="tech-pill">CSS3</span>
+                            <span class="tech-pill">Responsive Design</span>
+                            <span class="tech-pill">Flexbox / Grid</span>
+                        </div>
+
+                        <div class="info-footer">
+                            <div class="project-counter">PILAR <span>03</span> / 03</div>
+                            <a href="https://carmenjessalyn-cpu.github.io/UTS-Web-Development/" target="_blank"
+                                rel="noopener noreferrer" class="btn-github-link">
+                                <span>Website Preview</span>
+                                <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+                                    <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/carmenjessalyn-cpu/UTS-Web-Development.git" target="_blank"
+                                rel="noopener noreferrer" class="btn-github-link">
+                                <span>Repository</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYEK 4: Full-stack PHP -->
+                <div class="project-slide-item" data-slide="3">
+                    <div class="project-visual-panel theme-academic">
+                        <div class="space-grid-bg"></div>
+                        <span class="project-badge-top">UAS Web Development</span>
+                        <div class="project-big-mark"><img src="image/UAS.jpeg" alt="Academic Web Application" /></div>
+                    </div>
+                    <div class="project-info-panel">
+                        <div class="info-sublabel">Full-Stack Web Development</div>
+                        <h3 class="info-title">Academic Web Application</h3>
+                        <p class="info-desc">
+                            A full-stack dynamic web application built as an academic coursework project. It combines a
+                            responsive front-end interface built with Bootstrap and JavaScript with a PHP and MySQL
+                            backend to manage database records and user interactions seamlessly.
+                        </p>
+
+                        <div class="info-tech-stack">
+                            <span class="tech-pill">PHP</span>
+                            <span class="tech-pill">Bootstrap</span>
+                            <span class="tech-pill">JavaScript</span>
+                            <span class="tech-pill">MySQL</span>
+                        </div>
+                        <div class="info-footer">
+                            <div class="project-counter">PROYEK <span>02</span> / 03</div>
+                            <a href="https://uas-webdev.rf.gd/" target="_blank" rel="noopener noreferrer"
+                                class="btn-github-link">
+                                <span>Website Preview</span>
+                                <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+                                    <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <a href="https://github.com/carmenjessalyn-cpu/UAS-Web-Development.git" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github-link">
+                                    <span>Repository GitHub</span>
+                                    <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+                                        <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYEK 5: SISTEM PERPUSTAKAAN -->
+                <div class="project-slide-item" data-slide="4">
+                    <div class="project-visual-panel theme-library">
+                        <div class="space-grid-bg"></div>
+                        <span class="project-badge-top">Final Semester Project</span>
+                        <div class="project-big-mark"><img src="image/OBP.jpeg" alt="Sistem Perpustakaan Digital" />
+                        </div>
+                    </div>
+                    <div class="project-info-panel">
+                        <div class="info-sublabel">Full-Stack Development</div>
+                        <h3 class="info-title">Digital Library Management System</h3>
+                        <p class="info-desc">
+                            A web application developed for the Object-Based Programming (OBP) course using Spring Boot.
+                            In this team project, I focused on designing and implementing the front-end user interface,
+                            crafting structured layouts, and ensuring a seamless, user-friendly experience across all
+                            views.
+                        </p>
+
+                        <div class="info-tech-stack">
+                            <span class="tech-pill">Spring Boot</span>
+                            <span class="tech-pill">Thymeleaf</span>
+                            <span class="tech-pill">HTML/CSS</span>
+                            <span class="tech-pill">Java</span>
+                        </div>
+                        <div class="info-footer">
+                            <div class="project-counter">PROYEK <span>03</span> / 03</div>
+                            <a href="https://github.com/carmenjessalyn-cpu/Perpustakaan-Proyek-UAS-.git" target="_blank"
+                                rel="noopener noreferrer" class="btn-github-link">
+                                <span>Repository GitHub</span>
+                                <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+                                    <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYEK 6: DATA ANALYTICS (Jakarta Air Quality Forecasting & XAI) -->
+                <div class="project-slide-item" data-slide="5">
+                    <div class="project-visual-panel theme-academic">
+                        <div class="space-grid-bg"></div>
+                        <span class="project-badge-top">Data Science & XAI Research</span>
+                        <div class="project-big-mark">
+                            <img src="image/BIG DATA ISPU.png" alt="Jakarta Air Quality Analysis" />
+                        </div>
+                    </div>
+
+                    <div class="project-info-panel">
+                        <div class="info-sublabel">Data Analytics & Machine Learning</div>
+                        <h3 class="info-title">Jakarta Air Quality Forecasting & XAI</h3>
+
+                        <p class="info-desc">
+                            An academic research project analyzing Jakarta's air quality trends (2016–2025) using a
+                            Random Forest regressor combined with temporal lag feature engineering ($t-1, t-2, t-7$). It
+                            integrates Independent T-Test statistics to examine structural breaks during the COVID-19
+                            pandemic and applies SHAP (TreeExplainer) to provide transparent, interpretable machine
+                            learning predictions.
+                        </p>
+
+                        <div class="info-tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Random Forest</span>
+                            <span class="tech-pill">SHAP (XAI)</span>
+                            <span class="tech-pill">Statistical Analysis</span>
+                        </div>
+
+                        <div class="info-footer">
+                            <div class="project-counter">PROYEK <span>04</span> / 04</div>
+                            <a href="pdf/Artikel ENG_825240096-terkunci.pdf" target="_blank" rel="noopener noreferrer"
+                                class="btn-github-link">
+                                <span>Research Paper</span>
+                                <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+                                    <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pengalaman (Organisasi & Lomba) -->
+    <section id="experience">
+        <div class="section-divider"></div>
+        <div class="mission-inner">
+            <div class="mission-header reveal">
+                <div>
+                    <p class="section-tag">Experience</p>
+                    <h2 class="section-title">Work & Leadership Journey</h2>
+                </div>
+            </div>
+
+            <div class="timeline reveal">
+                <!-- ASDOS -->
+                <div class="timeline-entry">
+                    <div class="entry-date">
+                        <div class="entry-year">2026</div>
+                        <div class="entry-period">Present</div>
+                    </div>
+                    <div class="entry-content">
+                        <div class="entry-role">Teaching Assistant – Front-End Development & Information Systems
+                            Analysis & Design</div>
+                        <div class="entry-org">Faculty of Information Technology, Universitas Tarumanagara</div>
+                        <p class="entry-desc">
+                            Mentored and evaluated <strong>50+ undergraduate students</strong> across UI programming and
+                            system design courses. Facilitated <strong>12+ hands-on lab sessions</strong>, conducted
+                            code and UI design reviews.
+                        </p>
+                        <div class="entry-tags">
+                            <span class="entry-tag">Front-End Development</span>
+                            <span class="entry-tag">DRAW.IO</span>
+                            <span class="entry-tag">System Analysis</span>
+                            <span class="entry-tag">Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- UCCD -->
+                <div class="timeline-entry">
+                    <div class="entry-date">
+                        <div class="entry-year">2024–2026</div>
+                        <div class="entry-period">Executive</div>
+                    </div>
+                    <div class="entry-content">
+                        <div class="entry-role">General Secretary · Former Head of Creative Design</div>
+                        <div class="entry-org">UNTAR Computer Club Development (UCCD)</div>
+                        <p class="entry-desc">
+                            Managed administrative correspondence and student achievement reporting for <strong>100+
+                                active members</strong>. Spearheaded visual branding standards, creative asset
+                            workflows, and brand guidelines across <strong>10+ internal and external programs</strong>.
+                        </p>
+                        <div class="entry-tags">
+                            <span class="entry-tag">General Secretary</span>
+                            <span class="entry-tag">Creative Design</span>
+                            <span class="entry-tag">Administration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BEM / I/O Festival -->
+                <div class="timeline-entry">
+                    <div class="entry-date">
+                        <div class="entry-year">2025–2026</div>
+                        <div class="entry-period">Organization</div>
+                    </div>
+                    <div class="entry-content">
+                        <div class="entry-role">Multi-Event Lead & Vice Coordinator</div>
+                        <div class="entry-org">BEM FTI UNTAR</div>
+                        <p class="entry-desc">
+                            Spearheaded key operational and media documentation roles across <strong>4+ flagship
+                                programs</strong> (I/O Festival 2026, Desa Binaan, Studi Banding UNSIKA, & Company Visit
+                            to blu). Managed sponsorship closing, official correspondence, and visual grand designs,
+                            engaging over <strong>1,000+ total participants</strong> and external stakeholders.
+                        </p>
+                        <div class="entry-tags">
+                            <span class="entry-tag">Event Operations</span>
+                            <span class="entry-tag">Media & Documentation</span>
+                            <span class="entry-tag">Stakeholder Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LEGIO EKARISTI -->
+                <div class="timeline-entry">
+                    <div class="entry-date">
+                        <div class="entry-year">2024-2026</div>
+                        <div class="entry-period">Community</div>
+                    </div>
+                    <div class="entry-content">
+                        <div class="entry-role">Easter Event Lead (PIC) & Operational Servant</div>
+                        <div class="entry-org">Legio Ekaristi</div>
+                        <p class="entry-desc">
+                            Served as Person in Charge (PIC) for the major Easter Service, recruiting, training, and
+                            mentoring <strong>200+ volunteers</strong> from foundational roles to flawless execution on
+                            event day. Managed continuous logistics and service coordination with <strong>100%
+                                operational reliability</strong>.
+                        </p>
+                        <div class="entry-tags">
+                            <span class="entry-tag">People Management</span>
+                            <span class="entry-tag">Large-Scale Operations</span>
+                            <span class="entry-tag">Mentorship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Sertifikat Carousel -->
+    <section id="certificates">
+        <div class="section-divider"></div>
+        <div class="certificates-inner reveal">
+
+            <div class="certificates-header">
+                <div>
+                    <p class="section-tag">Achievements & Credentials</p>
+                    <h2 class="section-title" style="margin-bottom: 0;">Certificates</h2>
+                </div>
+
+                <div class="cert-nav-controls">
+                    <button class="btn-nebula-nav" id="certPrev" aria-label="Sertifikat Sebelumnya">
+                        <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                            <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="btn-nebula-nav" id="certNext" aria-label="Sertifikat Selanjutnya">
+                        <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                            <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cert-carousel-wrapper">
+                <div class="cert-carousel-track" id="certTrack">
+
+                    <!-- Sertifikat 1 -->
+                    <div class="cert-slide-item">
+                        <div class="cert-card">
+                            <div class="cert-image-wrapper">
+                                <img src="image/cert-techsprint.jpg" alt="Sertifikat Techsprint Innovation Cup 2026"
+                                    class="cert-img" />
+                                <span class="cert-badge">UI/UX Competition</span>
+                            </div>
+                            <div class="cert-body">
+                                <div class="cert-org">Techsprint Innovation Cup 2026</div>
+                                <h3 class="cert-title">Participant & UI/UX Competitor</h3>
+                                <p class="cert-desc">
+                                    Sertifikat partisipasi jalur UI/UX Design mewakili Tim UCCD_SixSeven dengan fokus
+                                    perancangan antarmuka aplikasi interaktif.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sertifikat 2 -->
+                    <div class="cert-slide-item">
+                        <div class="cert-card">
+                            <div class="cert-image-wrapper">
+                                <img src="image/cert-ideanation.jpg" alt="Sertifikat IDEANATION 2026"
+                                    class="cert-img" />
+                                <span class="cert-badge">Semifinalist</span>
+                            </div>
+                            <div class="cert-body">
+                                <div class="cert-org">IDEANATION 2026</div>
+                                <h3 class="cert-title">Business Case Semifinalist</h3>
+                                <p class="cert-desc">
+                                    Penghargaan sebagai semifinalis dan peserta program mentoring business case bersama
+                                    Tim Third Impact.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sertifikat 3 -->
+                    <div class="cert-slide-item">
+                        <div class="cert-card">
+                            <div class="cert-image-wrapper">
+                                <img src="image/cert-aseandse.jpg" alt="Sertifikat ASEAN Data Science Explorers 2026"
+                                    class="cert-img" />
+                                <span class="cert-badge">Data Analytics</span>
+                            </div>
+                            <div class="cert-body">
+                                <div class="cert-org">ASEAN Data Science Explorers 2026</div>
+                                <h3 class="cert-title">Data Storyboarding Enablement</h3>
+                                <p class="cert-desc">
+                                    Sertifikat keikutsertaan sesi enablement dan penyusunan data storyboard berbasis SAP
+                                    Analytics Cloud.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sertifikat 4 -->
+                    <div class="cert-slide-item">
+                        <div class="cert-card">
+                            <div class="cert-image-wrapper">
+                                <img src="image/cert-dqlab.jpg" alt="Sertifikat DQLab Mini Bootcamp Batch 10"
+                                    class="cert-img" />
+                                <span class="cert-badge">Bootcamp</span>
+                            </div>
+                            <div class="cert-body">
+                                <div class="cert-org">DQLab Academy</div>
+                                <h3 class="cert-title">Introductory Data Analytics</h3>
+                                <p class="cert-desc">
+                                    Sertifikat kelulusan DQLab Mini Bootcamp Batch 10 mengenai eksplorasi data, teknik
+                                    pembersihan data, serta visualisasi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sertifikat 5 -->
+                    <div class="cert-slide-item">
+                        <div class="cert-card">
+                            <div class="cert-image-wrapper">
+                                <img src="image/cert-pega.jpg" alt="Sertifikat Pega National Internship Program"
+                                    class="cert-img" />
+                                <span class="cert-badge">Virtual Internship</span>
+                            </div>
+                            <div class="cert-body">
+                                <div class="cert-org">Pegasystems & SmartBridge</div>
+                                <h3 class="cert-title">Low-Code Platform Project</h3>
+                                <p class="cert-desc">
+                                    Sertifikat penyelesaian proyek capstone pada Pega National Internship Program dengan
+                                    fokus alur logika sistem aplikasi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bagian Resume -->
+    <section id="resume">
+        <div class="section-divider"></div>
+        <div class="resume-inner reveal">
+            <p class="section-tag">Curriculum Vitae</p>
+            <h2 class="section-title" style="margin-bottom:2rem;">Ringkasan profil lengkap.</h2>
+
+            <div class="resume-card">
+                <div class="resume-file-icon">
+                    <span>PDF</span>
+                    <span style="opacity:0.5;">CV</span>
+                </div>
+                <div class="resume-copy">
+                    <h3>Curriculum Vitae</h3>
+                    <p>
+                        Dokumen lengkap mencakup latar belakang akademis, pengalaman kompetisi data, manajemen proyek,
+                        serta penguasaan <em>tools</em> UI/UX dan Front-End.
+                    </p>
+                    <div class="resume-highlights">
+                        <span>Product Design</span>
+                        <span>Front-End Dev</span>
+                        <span>Data Analytics</span>
+                    </div>
+                </div>
+                <a href="image/CV (3).pdf" download class="btn-primary">
+                    Download CV
+                    <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+                        <path d="M7 2v7m0 0 3-3m-3 3L4 6M2.5 11h9" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="contact">
+        <div class="section-divider"></div>
+        <div class="contact-inner reveal">
+            <p class="section-tag" style="justify-content:center;">Let's Connect!</p>
+            <h2 class="contact-headline">
+                Mari padukan <span style="color:var(--nebula-300)">Data</span>, <span
+                    style="color:var(--nebula-300)">Desain</span>, & <span
+                    style="color:var(--nebula-300)">Logika.</span>
+            </h2>
+            <p class="contact-sub">
+                Selalu terbuka untuk diskusi teknis, kolaborasi proyek, maupun obrolan tentang pengembangan produk
+                digital.
+            </p>
+
+            <a href="mailto:carmenjessalyn@gmail.com" class="contact-email-big">
+                carmenjessalyn@gmail.com
+            </a>
+
+            <div class="contact-links">
+                <a href="https://github.com/carmenjessalyn-cpu" target="_blank" rel="noopener noreferrer"
+                    class="contact-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/carmen-jessalyn-tjong-malik-6b8989284" target="_blank"
+                    rel="noopener noreferrer" class="contact-link">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-copy">© 2026 <span>Carmen Jessalyn Tjong Malik</span></p>
+            <ul class="footer-links">
+                <li><a href="#hero">Atas</a></li>
+                <li><a href="#about">Overview</a></li>
+                <li><a href="#work">Pilar Proyek</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/starfield.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

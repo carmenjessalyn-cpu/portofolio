@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Diubah ke ../image/ -->
+    <link href="../image/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>Moodal - Case Study</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+    
+    <!-- Path CSS Sudah Benar (Menggunakan ../) -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/portfolio.css" />
+    <link rel="stylesheet" href="../css/case-study.css" />
+</head>
+
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+  <canvas id="starfield"></canvas>
+  <div class="planet-field">
+    <div class="planet planet-a">
+      <div class="ring"></div>
+    </div>
+    <div class="planet planet-b"></div>
+    <div class="planet planet-c"></div>
+  </div>
+
+  <div class="cs-nav-zone"></div>
+  <nav class="cs-nav">
+    <!-- Link kembali ke index.html di luar folder -->
+    <a href="../index.html" class="nav-logo"><span></span>CARMEN</a>
+    <a href="../index.html#work" class="back-link">&larr; Back to Works</a>
+  </nav>
+
+  <div class="cs-container">
+    <section class="cs-hero">
+      <span class="cs-badge">UI / UX Case Study</span>
+      <h1 class="cs-title">Moodal</h1>
+      <p class="cs-tagline">A Financial AI Copilot that helps freelancers, creative workers, and young entrepreneurs manage cash flow in a non-intimidating way.</p>
+
+      <div class="cs-meta-grid">
+        <div>
+          <div class="cs-meta-label">Role</div>
+          <div class="cs-meta-value">Product Design (UI/UX)</div>
+        </div>
+        <div>
+          <div class="cs-meta-label">Duration</div>
+          <div class="cs-meta-value">1 Month</div>
+        </div>
+        <div>
+          <div class="cs-meta-label">Tools</div>
+          <div class="cs-meta-value">Figma, Maze</div>
+        </div>
+        <div>
+          <div class="cs-meta-label">Type</div>
+          <div class="cs-meta-value">Mobile App</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cs-cover cover-moodal reveal"><img src="../image/moodal-banner.jpg" alt="Moodal" /></div>
+
+    <section class="cs-section reveal">
+      <p class="cs-section-label">Overview</p>
+      <h2>About the Project</h2>
+      <p>Moodal is an AI-based financial management application that I designed with Leticia Michelle and Kathleen
+        Klavinka, under UCCD SixSeven team, for the TechSprint Innovation Competition 2026 and Bizznovation 2026 competition. 
+        And manage to secure the top 20 out of 120 teams.</p>
+      <p>It all started with quite alarming data: a gap of about 14% between people who have access
+        to financial products (inclusion) and those who actually understand how to use them (literacy). Freelancers and young
+        entrepreneurs often record their finances haphazardly in Excel, or even mix personal and business money in one
+        account. And with that in mind, we proposed Moodal as a strategic financial partner that simplifies all of that.</p>
+    </section>
+
+    <section class="cs-section reveal">
+      <p class="cs-section-label">Problem</p>
+      <h2>The Problem Statement</h2>
+      <p>Independent business owners often operate without adequate records, making it difficult to access formal
+        financing (unbankable). Meanwhile, current financial platforms are considered too rigid and complicated for the digital
+        lifestyle of freelancers and young entrepreneurs.</p>
+
+      <div class="cs-two-col">
+        <div class="cs-col-card">
+          <h3>The Challenge</h3>
+          <p>Designing an informative financial dashboard without intimidating users who don't have an accounting
+            background, while still having analytical depth equivalent to a business consultant.</p>
+        </div>
+        <div class="cs-col-card">
+          <h3>The Goal</h3>
+          <p>Simplifying financial recording through OCR &amp; AI chat, while elevating business professionalism
+            standards with automated reports compliant with SAK EMKM and ready to be used for bank loan applications.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section reveal">
+      <p class="cs-section-label">Process</p>
+      <h2>Design Process</h2>
+      <p>Moodal was developed using an iterative and human-centered Design Thinking methodology.</p>
+
+      <div class="cs-process">
+        <div class="cs-process-step" data-step="01">
+          <h3>Empathize</h3>
+          <p>We conducted research from three angles: literature study on the "Inclusion vs. Literacy Paradox", competitive
+            positioning against BukuWarung and Buku Kas, and in-depth interviews with freelancers and young business
+            owners to understand furthermore about their financial needs and pain points.</p>
+        </div>
+        <div class="cs-process-step" data-step="02">
+          <h3>Define</h3>
+          <p>We mapped out two user segments through an empathy map: Mainstream (Digital Entrepreneurs &amp; Freelancers)
+            and Extreme (Traditional Small Businesses), that was represented by the personas of Berlamonica, a chef and culinary
+            business founder, and Nadia Ramadhani, an online skincare shop owner.</p>
+        </div>
+        <div class="cs-process-step" data-step="03">
+          <h3>Ideate</h3>
+          <p>After understanding the problem space, we used an Effort Impact Matrix to help us determine priority features. We concluded that OCR Scan, Finance, Analytics, and Ask
+            Moodal AI were placed in the high-impact quadrant to be developed first.</p>
+        </div>
+        <div class="cs-process-step" data-step="04">
+          <h3>Prototype</h3>
+          <p> We built a complete design system, starting from logo, forest green color palette, DM Serif Display &amp; Plus
+            Jakarta Sans typography. And then, we start designing the low-fidelity wireframes before designing high-fidelity screens for the Home, 
+            OCR Receipt Scan, Ask Moodal AI, Finance, Analytics, and Community features.</p>
+        </div>
+        <div class="cs-process-step" data-step="05">
+          <h3>Testing</h3>
+          <p>Usability testing with Berlamonica showed that the visual design was considered professional and intuitive
+            however, there was one crucial piece of feedback: the addition of Dark Mode, because Moodal users often work in
+            public spaces like coworking spaces, and overly bright financial figures were deemed less private. 
+            We also utilize Maze, a mock-up prototype tool, to conduct remote usability tests with other participants to 
+            understand their needs and to test if the apps manage to reduce the user cognitive load.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section reveal">
+      <p class="cs-section-label">Solution</p>
+      <h2>Try the Prototype</h2>
+      <p>Here is the interactive prototype for Moodal, from the Smart Dashboard on the Home screen, OCR-based Receipt Scan, Ask
+        Moodal AI, to the Analytics and Community features.</p>
+      <div class="cs-proto-frame">
+        <iframe
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FKKy6V8y47AZFdvKgUSUfcl%2FMOODAL--html-%3Fnode-id%3D96-2475%26t%3DxAdlbBDTQcRT4CHs-1"
+          allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="cs-proto-actions">
+        <a href="https://www.figma.com/proto/KKy6V8y47AZFdvKgUSUfcl/MOODAL--html-?node-id=96-2475&t=xAdlbBDTQcRT4CHs-1"
+          target="_blank" rel="noopener" class="btn-primary">
+          Open in Figma
+          <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="../index.html" class="btn-ghost">View Other Projects</a>
+      </div>
+    </section>
+
+    <section class="cs-section reveal">
+      <p class="cs-section-label">Reflection</p>
+      <h2>What I Learned</h2>
+      <div class="cs-reflection">
+        <p>Working on Moodal made me realize the importance of clear persona research when the audience spans across
+          generations and digital literacy levels. The feedback regarding visual privacy from the testing session was also a major
+          lesson that sometimes user needs aren't always about the new features, but also about feeling secure when using a product in
+          public spaces.</p>
+      </div>
+    </section>
+
+    <section class="cs-project-nav reveal">
+      <a href="case-study-ecostep.html" class="cs-nav-link prev">
+        <div class="cs-nav-dir">&larr; Previous</div>
+        <div class="cs-nav-title">EcoStep</div>
+      </a>
+      <a href="case-study-kayukita.html" class="cs-nav-link next">
+        <div class="cs-nav-dir">Next &rarr;</div>
+        <div class="cs-nav-title">KayuKita</div>
+      </a>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-inner" style="justify-content:center;">
+      <p class="footer-copy">&copy; 2026 <span>Carmen Jessalyn</span></p>
+    </div>
+  </footer>
+
+  <!-- Script JS Diubah ke ../js/ -->
+  <script src="../js/starfield.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

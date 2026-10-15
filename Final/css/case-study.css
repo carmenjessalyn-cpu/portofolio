@@ -1,0 +1,218 @@
+/* ═══════════════════════════════════════════════════════
+   CASE-STUDY.CSS — shared by every case-study-*.html page.
+   Depends on style.css being linked first (tokens, nav, etc).
+═══════════════════════════════════════════════════════ */
+
+.cs-container { position: relative; z-index: 2; max-width: 980px; margin: 0 auto; padding: 0 2rem; }
+
+.back-link { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: var(--star-dim); transition: color 0.3s; }
+.back-link:hover { color: var(--pulsar); }
+
+/* ─── Hero ─── */
+.cs-hero { padding: 7rem 0 3.5rem; position: relative; z-index: 2; }
+.cs-badge { display: inline-block; font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--pulsar); border: 1px solid rgba(0,229,255,0.3); padding: 0.35rem 0.8rem; border-radius: 999px; margin-bottom: 1.4rem; }
+.cs-title { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.4rem, 5vw, 4rem); letter-spacing: -0.03em; line-height: 1.05; margin-bottom: 1rem; }
+.cs-tagline { color: var(--star-dim); font-size: 1.05rem; max-width: 560px; line-height: 1.7; margin-bottom: 2.5rem; }
+
+.cs-meta-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); }
+.cs-meta-label { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--star-muted); margin-bottom: 0.4rem; }
+.cs-meta-value { font-family: var(--font-display); font-weight: 700; font-size: 0.95rem; }
+@media (max-width: 700px) { .cs-meta-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ─── Cover ─── */
+.cs-cover { aspect-ratio: 16/8; border-radius: 14px; margin: 3rem 0; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800; font-size: 3.5rem; color: rgba(255,255,255,0.85); position: relative; overflow: hidden; }
+.cs-cover::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 25% 20%, rgba(255,255,255,0.15), transparent 60%); }
+.cs-cover span { position: relative; z-index: 2; }
+
+/* ─── Body sections ─── */
+.cs-section { padding: 3rem 0; border-top: 1px solid rgba(255,255,255,0.06); }
+.cs-section-label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--nebula-300); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem; }
+.cs-section-label::before { content: ''; width: 20px; height: 1px; background: var(--nebula-300); }
+.cs-section h2 { font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; margin-bottom: 1rem; letter-spacing: -0.01em; }
+.cs-section p { color: var(--star-dim); font-size: 0.98rem; line-height: 1.85; max-width: 700px; margin-bottom: 1rem; }
+.cs-section p:last-child { margin-bottom: 0; }
+.cs-editnote { display: inline-block; margin-top: 1rem; font-family: var(--font-mono); font-size: 0.65rem; color: var(--star-muted); border: 1px dashed rgba(255,255,255,0.15); padding: 0.6rem 0.9rem; border-radius: 6px; }
+
+.cs-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem; }
+.cs-col-card { border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 1.5rem 1.6rem; background: rgba(255,255,255,0.02); }
+.cs-col-card h3 { font-family: var(--font-display); font-size: 1rem; margin-bottom: 0.6rem; color: var(--pulsar); }
+.cs-col-card p { font-size: 0.88rem; color: var(--star-dim); margin: 0; }
+@media (max-width: 700px) { .cs-two-col { grid-template-columns: 1fr; } }
+
+/* Feature list (used by front-end case studies) */
+.cs-feature-list { list-style: none; margin-top: 1.5rem; display: grid; gap: 0.7rem; }
+.cs-feature-list li { display: flex; gap: 0.8rem; align-items: baseline; color: var(--star-dim); font-size: 0.92rem; line-height: 1.6; }
+.cs-feature-list li::before { content: '—'; color: var(--pulsar); flex-shrink: 0; }
+
+.cs-tag-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.2rem; }
+.cs-tag { font-family: var(--font-mono); font-size: 0.65rem; padding: 0.4rem 0.75rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: var(--star-dim); }
+
+/* ─── Solution: Figma prototype embed (UI/UX case studies) ─── */
+.cs-proto-frame { position: relative; width: 100%; aspect-ratio: 16/10; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: var(--space-800); }
+.cs-proto-frame iframe { width: 100%; height: 100%; border: none; }
+
+/* ─── Solution: live-demo placeholder (front-end case studies) ─── */
+.cs-demo-frame {
+  width: 100%; aspect-ratio: 16/9; border-radius: 12px; border: 1px dashed rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; text-align: center;
+}
+.cs-demo-frame .ph-icon { font-size: 2rem; margin-bottom: 0.8rem; color: var(--star-muted); opacity: 0.7; }
+.cs-demo-frame p { font-family: var(--font-mono); font-size: 0.68rem; color: var(--star-muted); letter-spacing: 0.05em; line-height: 1.7; max-width: 280px; margin: 0 auto; }
+
+.cs-proto-actions { display: flex; gap: 1rem; margin-top: 1.4rem; flex-wrap: wrap; }
+
+/* ─── Reflection ─── */
+.cs-reflection { background: linear-gradient(150deg, rgba(124,106,247,0.06), rgba(0,229,255,0.02)); border-radius: 12px; padding: 2.2rem 2.4rem; margin-top: 1rem; }
+
+/* ─── Process steps (Empathize / Define / Ideate / Prototype / Test, etc.) ─── */
+.cs-process { display: grid; gap: 1.6rem; margin-top: 1.6rem; }
+.cs-process-step { position: relative; padding-left: 2.2rem; border-left: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.2rem; }
+.cs-process-step:last-child { border-left-color: transparent; }
+.cs-process-step::before {
+  content: attr(data-step);
+  position: absolute;
+  left: -14px;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--space-900);
+  border: 1px solid rgba(159,150,255,0.4);
+  color: var(--nebula-300);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cs-process-step h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.02rem; margin-bottom: 0.5rem; color: var(--star-white); }
+.cs-process-step p { font-size: 0.9rem; color: var(--star-dim); line-height: 1.75; margin: 0; max-width: 640px; }
+
+/* ─── Auto-hide nav (case study pages only): hidden until hovered near the top ─── */
+nav.cs-nav{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+
+    height:72px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 2rem;
+
+    background:rgba(7,9,18,.85);
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    z-index:9999;
+
+    flex:0 0 auto;
+}zz
+.cs-container{
+
+    max-width:980px;
+
+    margin:auto;
+
+    padding:6rem 2rem 0;
+
+}
+
+.back-link{
+    display:inline-flex;
+    align-items:center;
+    gap:.5rem;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  nav.cs-nav { transform: translateY(0); }
+  .cs-nav-zone { display: none; }
+}
+
+/* ─── Prev / next project nav ─── *//* ─── Project Navigation ─── */
+
+.cs-project-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    gap:4rem;
+
+    margin:5rem 0 4rem;
+    padding-top:2rem;
+
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.cs-nav-link{
+    text-decoration:none;
+    color:inherit;
+
+    transition:.35s ease;
+}
+
+.cs-nav-link.prev{
+    text-align:left;
+}
+
+.cs-nav-link.next{
+    text-align:right;
+    margin-left:auto;
+}
+
+.cs-nav-dir{
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+
+    font-family:var(--font-mono);
+    font-size:.72rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+
+    color:var(--star-muted);
+
+    transition:.35s;
+}
+
+.cs-nav-title{
+    margin-top:.6rem;
+
+    font-family:var(--font-display);
+    font-size:1.6rem;
+    font-weight:700;
+
+    transition:.35s;
+}
+
+.cs-nav-link:hover .cs-nav-title{
+    color:var(--pulsar);
+    transform:translateX(6px);
+}
+
+.cs-nav-link.next:hover .cs-nav-title{
+    transform:translateX(-6px);
+}
+
+.cs-nav-link:hover .cs-nav-dir{
+    color:var(--pulsar);
+}
+
+@media(max-width:700px){
+
+    .cs-project-nav{
+        flex-direction:column;
+        gap:2rem;
+    }
+
+    .cs-nav-link.next{
+        margin-left:0;
+        text-align:left;
+    }
+
+}
