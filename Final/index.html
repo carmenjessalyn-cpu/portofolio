@@ -166,6 +166,14 @@
             <div>
                 <p class="section-tag">Featured Work</p>
                 <h2 class="section-title" style="margin-bottom: 0;">Projects</h2>
+
+                <!-- Tab Filters Ditambahkan Di Sini -->
+                <div class="project-tabs">
+                    <button class="tab-btn active" data-filter="all">All</button>
+                    <button class="tab-btn" data-filter="uiux">UI/UX</button>
+                    <button class="tab-btn" data-filter="frontend">Front-End</button>
+                    <button class="tab-btn" data-filter="data">Data</button>
+                </div>
             </div>
 
             <div class="showcase-nav-controls">
@@ -189,7 +197,7 @@
             <div class="showcase-slider-track">
 
                 <!-- PROYEK 1: UI/UX DESIGN (Moodal) -->
-                <div class="project-slide-item is-active" data-slide="0">
+                <div class="project-slide-item is-active" data-category="uiux" data-slide="0">
                     <div class="project-visual-panel theme-moodal">
                         <div class="space-grid-bg"></div>
                         <span class="project-badge-top">UI/UX & Product Design</span>
@@ -216,9 +224,8 @@
                         </div>
 
                         <div class="info-footer">
-                            <div class="project-counter">Projects <span>01</span> / 03</div>
                             <a href="UI/case-study-moodal.html" class="btn-github-link">
-                                <span>Lihat Case Study</span>
+                                <span>Case Study</span>
                                 <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
                                     <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round" />
@@ -229,7 +236,7 @@
                 </div>
 
                 <!-- PROYEK 2: UI/UX DESIGN (Kayu Kita) -->
-                <div class="project-slide-item" data-slide="1">
+                <div class="project-slide-item" data-category="uiux" data-slide="1">
                     <div class="project-visual-panel theme-kayu">
                         <div class="space-grid-bg"></div>
                         <span class="project-badge-top">UI/UX & Product Design</span>
@@ -255,9 +262,8 @@
                         </div>
 
                         <div class="info-footer">
-                            <div class="project-counter">Projects <span>02</span> / 03</div>
                             <a href="UI/case-study-kayukita.html" class="btn-github-link">
-                                <span>Lihat Case Study</span>
+                                <span>Case Study</span>
                                 <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
                                     <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
                                         stroke-linecap="round" stroke-linejoin="round" />
@@ -267,8 +273,46 @@
                     </div>
                 </div>
 
-                <!-- PROYEK 3: FRONT-END (Peonies Studio) -->
-                <div class="project-slide-item" data-slide="2">
+                <!-- PROYEK 3: UI/UX DESIGN (Sorak.in) -->
+                <div class="project-slide-item" data-category="uiux" data-slide="1">
+                    <div class="project-visual-panel theme-sorakin">
+                        <div class="space-grid-bg"></div>
+                        <span class="project-badge-top">UI/UX & Web Application</span>
+                        <div class="project-big-mark">
+                            <img src="image/SORAKI.png" alt="Sorak.in UI/UX Case Study" />
+                        </div>
+                    </div>
+                    <div class="project-info-panel">
+                        <div class="info-sublabel">User Research & Wireframing</div>
+                        <h3 class="info-title">Sorak.in</h3>
+                        <p class="info-desc">
+                            Sorak.in is a web-based concert ticket booking platform designed to be an end-to-end
+                            solution connecting concert promoters with audiences. This project focuses on creating a
+                            smooth user flow, from browsing the event catalog, choosing ticket tiers, going through the
+                            checkout process with a Virtual Account payment timer, to automatically issuing a digital
+                            E-Invoice.</p>
+                        <div class="info-tech-stack">
+                            <span class="tech-pill">Figma</span>
+                            <span class="tech-pill">Wireframing</span>
+                            <span class="tech-pill">User Flow</span>
+                            <span class="tech-pill">Prototyping</span>
+                            <span class="tech-pill">Web Design</span>
+                        </div>
+
+                        <div class="info-footer">
+                            <a href="UI/case-study-sorakin.html" class="btn-github-link">
+                                <span>Case Study</span>
+                                <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+                                    <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYEK 4: FRONT-END (Peonies Studio) -->
+                <div class="project-slide-item" data-category="frontend" data-slide="2">
                     <div class="project-visual-panel theme-academic">
                         <div class="space-grid-bg"></div>
                         <span class="project-badge-top">Front-End Architecture</span>
@@ -293,7 +337,6 @@
                         </div>
 
                         <div class="info-footer">
-                            <div class="project-counter">PILAR <span>03</span> / 03</div>
                             <a href="https://carmenjessalyn-cpu.github.io/UTS-Web-Development/" target="_blank"
                                 rel="noopener noreferrer" class="btn-github-link">
                                 <span>Website Preview</span>
@@ -304,14 +347,14 @@
                             </a>
                             <a href="https://github.com/carmenjessalyn-cpu/UTS-Web-Development.git" target="_blank"
                                 rel="noopener noreferrer" class="btn-github-link">
-                                <span>Repository</span>
+                                <span>Repository GitHub</span>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- PROYEK 4: Full-stack PHP -->
-                <div class="project-slide-item" data-slide="3">
+                <!-- PROYEK 5: Full-stack PHP -->
+                <div class="project-slide-item" data-category="frontend" data-slide="3">
                     <div class="project-visual-panel theme-academic">
                         <div class="space-grid-bg"></div>
                         <span class="project-badge-top">UAS Web Development</span>
@@ -333,7 +376,6 @@
                             <span class="tech-pill">MySQL</span>
                         </div>
                         <div class="info-footer">
-                            <div class="project-counter">PROYEK <span>02</span> / 03</div>
                             <a href="https://uas-webdev.rf.gd/" target="_blank" rel="noopener noreferrer"
                                 class="btn-github-link">
                                 <span>Website Preview</span>
@@ -344,10 +386,6 @@
                                 <a href="https://github.com/carmenjessalyn-cpu/UAS-Web-Development.git" target="_blank"
                                     rel="noopener noreferrer" class="btn-github-link">
                                     <span>Repository GitHub</span>
-                                    <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
-                                        <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
                                 </a>
                             </a>
                         </div>
@@ -355,7 +393,7 @@
                 </div>
 
                 <!-- PROYEK 5: SISTEM PERPUSTAKAAN -->
-                <div class="project-slide-item" data-slide="4">
+                <div class="project-slide-item" data-category="frontend" data-slide="4">
                     <div class="project-visual-panel theme-library">
                         <div class="space-grid-bg"></div>
                         <span class="project-badge-top">Final Semester Project</span>
@@ -379,7 +417,6 @@
                             <span class="tech-pill">Java</span>
                         </div>
                         <div class="info-footer">
-                            <div class="project-counter">PROYEK <span>03</span> / 03</div>
                             <a href="https://github.com/carmenjessalyn-cpu/Perpustakaan-Proyek-UAS-.git" target="_blank"
                                 rel="noopener noreferrer" class="btn-github-link">
                                 <span>Repository GitHub</span>
@@ -393,7 +430,7 @@
                 </div>
 
                 <!-- PROYEK 6: DATA ANALYTICS (Jakarta Air Quality Forecasting & XAI) -->
-                <div class="project-slide-item" data-slide="5">
+                <div class="project-slide-item" data-category="data" data-slide="5">
                     <div class="project-visual-panel theme-academic">
                         <div class="space-grid-bg"></div>
                         <span class="project-badge-top">Data Science & XAI Research</span>
@@ -422,7 +459,6 @@
                         </div>
 
                         <div class="info-footer">
-                            <div class="project-counter">PROYEK <span>04</span> / 04</div>
                             <a href="pdf/Artikel ENG_825240096-terkunci.pdf" target="_blank" rel="noopener noreferrer"
                                 class="btn-github-link">
                                 <span>Research Paper</span>
@@ -553,8 +589,8 @@
 
             <div class="certificates-header">
                 <div>
-                    <p class="section-tag">Achievements & Credentials</p>
-                    <h2 class="section-title" style="margin-bottom: 0;">Certificates</h2>
+                    <p class="section-tag">Achievements</p>
+                    <h2 class="section-title" style="margin-bottom: 0;">Certificates & Participation</h2>
                 </div>
 
                 <div class="cert-nav-controls">
@@ -580,16 +616,15 @@
                     <div class="cert-slide-item">
                         <div class="cert-card">
                             <div class="cert-image-wrapper">
-                                <img src="image/cert-techsprint.jpg" alt="Sertifikat Techsprint Innovation Cup 2026"
-                                    class="cert-img" />
-                                <span class="cert-badge">UI/UX Competition</span>
+                                <img src="image/BIZZNOVATION.png" alt="BIZZNOVATION 2026" class="cert-img" />
+                                <span class="cert-badge">UI/UX & Business Plan Competition</span>
                             </div>
                             <div class="cert-body">
-                                <div class="cert-org">Techsprint Innovation Cup 2026</div>
-                                <h3 class="cert-title">Participant & UI/UX Competitor</h3>
+                                <div class="cert-org">BIZZNOVATION 2026</div>
+                                <h3 class="cert-title">Top 7 Finalist</h3>
                                 <p class="cert-desc">
-                                    Sertifikat partisipasi jalur UI/UX Design mewakili Tim UCCD_SixSeven dengan fokus
-                                    perancangan antarmuka aplikasi interaktif.
+                                    Top 7 Finalist in UI/UX Design Track. Proudly represented Team UCCD_SixSeven in
+                                    crafting an interactive and user-centric app interface.
                                 </p>
                             </div>
                         </div>
@@ -599,16 +634,15 @@
                     <div class="cert-slide-item">
                         <div class="cert-card">
                             <div class="cert-image-wrapper">
-                                <img src="image/cert-ideanation.jpg" alt="Sertifikat IDEANATION 2026"
-                                    class="cert-img" />
-                                <span class="cert-badge">Semifinalist</span>
+                                <img src="image/IDEANATION.png" alt="Sertifikat IDEANATION 2026" class="cert-img" />
+                                <span class="cert-badge">Business Case Competition</span>
                             </div>
                             <div class="cert-body">
-                                <div class="cert-org">IDEANATION 2026</div>
-                                <h3 class="cert-title">Business Case Semifinalist</h3>
+                                <div class="cert-org">IDEANATION IPB 2026</div>
+                                <h3 class="cert-title">Semifinalist</h3>
                                 <p class="cert-desc">
-                                    Penghargaan sebagai semifinalis dan peserta program mentoring business case bersama
-                                    Tim Third Impact.
+                                    Semi-Finalist out of 100+ teams! Proudly represented Team Third Impact in the
+                                    Business Case competition and exclusive mentoring program.
                                 </p>
                             </div>
                         </div>
@@ -618,16 +652,15 @@
                     <div class="cert-slide-item">
                         <div class="cert-card">
                             <div class="cert-image-wrapper">
-                                <img src="image/cert-aseandse.jpg" alt="Sertifikat ASEAN Data Science Explorers 2026"
-                                    class="cert-img" />
-                                <span class="cert-badge">Data Analytics</span>
+                                <img src="image/cert-aseandse.jpg" alt="GBECC 180DG 2026" class="cert-img" />
+                                <span class="cert-badge">Business Case Competition</span>
                             </div>
                             <div class="cert-body">
-                                <div class="cert-org">ASEAN Data Science Explorers 2026</div>
-                                <h3 class="cert-title">Data Storyboarding Enablement</h3>
+                                <div class="cert-org">180 Degrees COnsulting UI 2026</div>
+                                <h3 class="cert-title">Semifinalist</h3>
                                 <p class="cert-desc">
-                                    Sertifikat keikutsertaan sesi enablement dan penyusunan data storyboard berbasis SAP
-                                    Analytics Cloud.
+                                    Ranked as a Semi-Finalist among 150+ competing teams. Participated in an intensive
+                                    Business Case mentoring program with Team Third Impact.
                                 </p>
                             </div>
                         </div>
@@ -637,16 +670,16 @@
                     <div class="cert-slide-item">
                         <div class="cert-card">
                             <div class="cert-image-wrapper">
-                                <img src="image/cert-dqlab.jpg" alt="Sertifikat DQLab Mini Bootcamp Batch 10"
-                                    class="cert-img" />
-                                <span class="cert-badge">Bootcamp</span>
+                                <img src="image/TECHSPRINT.png" alt="Sertifikat TechSprint 2026" class="cert-img" />
+                                <span class="cert-badge">UI/UX Competition</span>
                             </div>
                             <div class="cert-body">
-                                <div class="cert-org">DQLab Academy</div>
-                                <h3 class="cert-title">Introductory Data Analytics</h3>
+                                <div class="cert-org">TechSprint 2026</div>
+                                <h3 class="cert-title">Top 20 Participant</h3>
                                 <p class="cert-desc">
-                                    Sertifikat kelulusan DQLab Mini Bootcamp Batch 10 mengenai eksplorasi data, teknik
-                                    pembersihan data, serta visualisasi.
+                                    Recognized as one of the top 20 participants among 70+ participants in the UI/UX
+                                    Design competition, demonstrating exceptional skills in user experience design and
+                                    prototyping.
                                 </p>
                             </div>
                         </div>
@@ -656,16 +689,16 @@
                     <div class="cert-slide-item">
                         <div class="cert-card">
                             <div class="cert-image-wrapper">
-                                <img src="image/cert-pega.jpg" alt="Sertifikat Pega National Internship Program"
+                                <img src="image/LOCAL TECH BATTLE.png" alt="Sertifikat Local Tech Battle 2026"
                                     class="cert-img" />
-                                <span class="cert-badge">Virtual Internship</span>
+                                <span class="cert-badge">UI/UX Competition</span>
                             </div>
                             <div class="cert-body">
-                                <div class="cert-org">Pegasystems & SmartBridge</div>
-                                <h3 class="cert-title">Low-Code Platform Project</h3>
+                                <div class="cert-org">Local Tech Battle 2026</div>
+                                <h3 class="cert-title">Participant</h3>
                                 <p class="cert-desc">
-                                    Sertifikat penyelesaian proyek capstone pada Pega National Internship Program dengan
-                                    fokus alur logika sistem aplikasi.
+                                    Participated in the UI/UX Design track, gaining valuable hands-on experience in
+                                    user-centric design and interactive prototyping.
                                 </p>
                             </div>
                         </div>
@@ -682,7 +715,7 @@
         <div class="section-divider"></div>
         <div class="resume-inner reveal">
             <p class="section-tag">Curriculum Vitae</p>
-            <h2 class="section-title" style="margin-bottom:2rem;">Ringkasan profil lengkap.</h2>
+            <h2 class="section-title" style="margin-bottom:2rem;">Further more</h2>
 
             <div class="resume-card">
                 <div class="resume-file-icon">
@@ -692,7 +725,7 @@
                 <div class="resume-copy">
                     <h3>Curriculum Vitae</h3>
                     <p>
-                        Comprehensive overview of academic achievements,  experience, product design,
+                        Comprehensive overview of academic achievements, experience, product design,
                         and cross-functional leadership in systems analysis and data analytics.
                     </p>
                     <div class="resume-highlights">
@@ -718,13 +751,12 @@
         <div class="contact-inner reveal">
             <p class="section-tag" style="justify-content:center;">Let's Connect!</p>
             <h2 class="contact-headline">
-                Mari padukan <span style="color:var(--nebula-300)">Data</span>, <span
-                    style="color:var(--nebula-300)">Desain</span>, & <span
-                    style="color:var(--nebula-300)">Logika.</span>
+                Collaborating <span style="color:var(--nebula-300)">Data</span> &<span style="color:var(--nebula-300)">
+                    Design</span>
             </h2>
             <p class="contact-sub">
-                Selalu terbuka untuk diskusi teknis, kolaborasi proyek, maupun obrolan tentang pengembangan produk
-                digital.
+                Always open for collaboration, discussions, and new opportunities. Feel free to reach out via email or
+                connect on GitHub and LinkedIn.
             </p>
 
             <a href="mailto:carmenjessalyn@gmail.com" class="contact-email-big">
@@ -745,9 +777,9 @@
         <div class="footer-inner">
             <p class="footer-copy">© 2026 <span>Carmen Jessalyn Tjong Malik</span></p>
             <ul class="footer-links">
-                <li><a href="#hero">Atas</a></li>
+                <li><a href="#hero">BACK TO TOP</a></li>
                 <li><a href="#about">Overview</a></li>
-                <li><a href="#work">Pilar Proyek</a></li>
+                <li><a href="#work">PROJECTS</a></li>
             </ul>
         </div>
     </footer>

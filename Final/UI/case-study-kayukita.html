@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Diubah ke ../image/ -->
+  <link href="../image/favicon.ico" rel="icon" type="image/x-icon" />
+  <title>Kayu Kita - Case Study</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/portfolio.css" />
+  <link rel="stylesheet" href="../css/case-study.css" />
+</head>
+
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+  <canvas id="starfield"></canvas>
+  <div class="planet-field">
+    <div class="planet planet-a">
+      <div class="ring"></div>
+    </div>
+    <div class="planet planet-b"></div>
+    <div class="planet planet-c"></div>
+  </div>
+
+  <div class="cs-nav-zone"></div>
+  <nav class="cs-nav">
+    <a href="../index.html" class="nav-logo"><span></span>CARMEN</a>
+    <a href="../index.html#work" class="back-link">&larr; Back to Works</a>
+  </nav>
+
+  <div class="cs-container">
+    <section class="cs-hero">
+      <span class="cs-badge">UI / UX Case Study</span>
+      <h1 class="cs-title">KayuKita</h1>
+      <p class="cs-tagline">Connecting Tradition, Reviving the Economy.</p>
+
+      <div class="cs-meta-grid">
+        <div>
+          <div class="cs-meta-label">Role</div>
+          <div class="cs-meta-value">Product Design (UI/UX)</div>
+        </div>
+        <div>
+          <div class="cs-meta-label">Team</div>
+          <div class="cs-meta-value">UCCD SixSeven</div>
+        </div>
+        <div>
+          <div class="cs-meta-label">Tools</div>
+          <div class="cs-meta-value">Figma</div>
+        </div>
+        <div>
+          <div class="cs-meta-label">Type</div>
+          <div class="cs-meta-value">Mobile App</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cs-cover cover-moodal reveal"><img src="../image/kayukita-banner.jpeg" alt="KayuKita" /></div>
+
+    <section class="cs-section reveal">
+      <p class="cs-section-label">Overview</p>
+      <h2>About the Project</h2>
+      <p>KayuKita is an innovative platform designed to empower the local woodcraft industry by digitizing the ecosystem
+        from upstream to downstream. I designed this application alongside Kathleen Klavinka and Leticia Michelle as
+        part of the UCCD SixSeven team.</p>
+      <p>The project addresses a critical paradox: while Indonesia's furniture industry is projected to reach USD 9.1
+        billion by 2025, the primary industrial production capacity has dropped by 33% due to supply chain uncertainties
+        and "The Lost Generation" phenomenon, where young people are leaving the craftsman profession. KayuKita acts as
+        a digital integrator that shortens distribution chains to increase craftsmen's profit margins, while providing
+        educational modules to revitalize the interest of the younger generation.</p>
+    </section>
+
+    <section class="cs-section reveal">
+      <p class="cs-section-label">Problem</p>
+      <h2>The Problem Statement</h2>
+      <p>Local wood craftsmen are threatened by raw material scarcity, a lack of youth regeneration, and difficulties in
+        independently marketing their products. Meanwhile, consumers face challenges in finding trusted craftsmen due to
+        a lack of technical knowledge regarding wood quality and fair pricing.</p>
+
+      <div class="cs-two-col">
+        <div class="cs-col-card">
+          <h3>The Challenge</h3>
+          <p>Bridging the massive gap between the production capabilities of traditional craftsmen and the specific,
+            modern demands of the market. The application must be lightweight and accessible for senior craftsmen with
+            limited digital literacy, yet professional enough for modern buyers.</p>
+        </div>
+        <div class="cs-col-card">
+          <h3>The Goal</h3>
+          <p>Creating an integrated 3-in-1 digital ecosystem: "Buat Kayu" for custom furniture orders, "Cari Kayu" for
+            direct marketplace access, and "Tau Kayu" as a digital literacy center to educate users about Indonesian
+            wood characteristics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section reveal">
+      <p class="cs-section-label">Process</p>
+      <h2>Design Process</h2>
+      <p>KayuKita was developed using an iterative and human-centered Design Thinking methodology.</p>
+
+      <div class="cs-process">
+        <div class="cs-process-step" data-step="01">
+          <h3>Empathize</h3>
+          <p>We conducted research through three approaches: "Looking In" via literature studies on the extinction
+            threats to local crafts, "Looking Around" for market positioning, and "Looking Out" by interviewing local
+            wood craftsmen to deeply understand their daily operations and marketing constraints.</p>
+        </div>
+        <div class="cs-process-step" data-step="02">
+          <h3>Define</h3>
+          <p>We mapped out two main user segments via an empathy map: Mainstream (Local Wood Craftsmen, represented by
+            Fadhiel Wibowo, a 29-year-old decorator) and Extreme (General Consumers, represented by Laras Nurdhaya, a
+            36-year-old full-time employee looking for custom furniture).</p>
+        </div>
+        <div class="cs-process-step" data-step="03">
+          <h3>Ideate</h3>
+          <p>Using an Effort Impact Matrix, we prioritized high-impact features such as Buat Kayu, Cari Kayu, and Tau
+            Kayu. We then built a cohesive design system using an earthy color palette and the Inter typeface to ensure
+            readability.</p>
+        </div>
+        <div class="cs-process-step" data-step="04">
+          <h3>Prototype</h3>
+          <p>We designed the mobile app prototype in Figma, developing high-fidelity screens for Onboarding, Login, the
+            main Dashboard, the Cari Kayu marketplace, Buat Kayu custom bookings, Tau Kayu educational videos, and a
+            dedicated registration flow for craftsmen.</p>
+        </div>
+        <div class="cs-process-step" data-step="05">
+          <h3>Testing</h3>
+          <p>During Usability Testing with Pak Fadhiel, a local craftsman, the visual design was praised for being clean
+            and user-friendly. However, he provided a crucial piece of feedback: the necessity of a Dark Mode feature,
+            as senior craftsmen often experience eye strain from bright screens during long durations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section reveal">
+      <p class="cs-section-label">Solution</p>
+      <h2>Try the Prototype</h2>
+      <p>Here is the interactive prototype for KayuKita, featuring the main dashboard, the marketplace, custom furniture
+        booking, and the educational hub.</p>
+      <div class="cs-proto-frame">
+        <iframe
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FZ6wewASOXs16w7ay6ddpsh%2FKayuKita%3Fnode-id%3D0-1%26t%3DkqRNsjVNtY4hesdz-1"
+          allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="cs-proto-actions">
+        <a href="https://www.figma.com/proto/Z6wewASOXs16w7ay6ddpsh/KayuKita?node-id=0-1&t=kqRNsjVNtY4hesdz-1"
+          target="_blank" rel="noopener" class="btn-primary">
+          Open in Figma
+          <svg width="14" height="14" fill="none" viewBox="0 0 14 14">
+            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="../index.html" class="btn-ghost">View Other Projects</a>
+      </div>
+    </section>
+
+    <section class="cs-section reveal">
+      <p class="cs-section-label">Reflection</p>
+      <h2>What I Learned</h2>
+      <div class="cs-reflection">
+        <p>Developing KayuKita taught me the importance of inclusive design when catering to a two-sided market. The
+          testing session highlighted that accessibility features, such as Dark Mode for older craftsmen, are just as
+          vital as functional capabilities in ensuring the platform is truly comfortable and empowering for all users.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner" style="justify-content:center;">
+        <p class="footer-copy">&copy; 2026 <span>Carmen Jessalyn</span></p>
+      </div>
+    </footer>
+
+    <!-- Script JS Diubah ke ../js/ -->
+    <script src="../js/starfield.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

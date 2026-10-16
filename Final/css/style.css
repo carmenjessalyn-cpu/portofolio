@@ -722,3 +722,30 @@ footer {
   transform: translateY(0);
 }
 
+.project-tabs {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--star-dim);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  border-color: var(--nebula-300);
+  color: #fff;
+  background: rgba(159, 150, 255, 0.15);
+}
